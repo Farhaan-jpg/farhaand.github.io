@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+tools/out
+Project1-extracted
+Project1-main.zip
+*.pdf
+
+# Design reference screenshots of another designer's published portfolio.
+reference/entire-portfolio.jpg
+reference/hero.jpg
+reference/studio-section.jpg

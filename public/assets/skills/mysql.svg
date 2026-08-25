@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="28" fill="#00618a"/>
+  <g transform="translate(18, 16) scale(0.72)">
+    <!-- Dolphin Body in Orange & White -->
+    <path fill="#e48e00" d="M102.5 38.8c-1.4-3.7-4-8.8-8.2-12.6-4.1-3.7-8.7-5.5-13.8-5.4-10.3.2-17.1 7.8-19.2 10.2-3.8-2.9-8.5-4.8-13.7-5.3-13.4-1.2-25.1 7-26.2 18.3-1.1 11.3 8.9 21.4 22.3 22.6 5 .4 9.8-.5 14-2.4 3.1 4.3 7.9 7.8 14 9.6 11.7 3.4 23.5-1.5 26.5-11.1 3-9.6-4.1-20.1-15.8-23.6-3-.9-6.1-1.2-9.1-.9 2.1-3.5 5.9-6.6 10.9-6.6 3 0 5.7 1 8.1 3.2 2.4 2.2 4 5.3 5 8.1l7.2-5.1z"/>
+    <!-- MySQL Crisp Text -->
+    <text x="6" y="106" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28" letter-spacing="1">MySQL</text>
+  </g>
+</svg>
