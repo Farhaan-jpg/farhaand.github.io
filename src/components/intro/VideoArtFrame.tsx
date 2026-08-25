@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from 'react'
 import { usePrefersReducedMotion, useElementPointer } from '@/lib/hooks'
+import { withBasePath } from '@/lib/basePath'
 
 type Props = {
   /** Moving artwork. Takes precedence over `image`. */
@@ -193,8 +194,8 @@ export default function VideoArtFrame({
           <video
             ref={videoRef}
             /* Only given a source once it is near the viewport. */
-            src={active ? video : undefined}
-            poster={poster ?? undefined}
+            src={active ? withBasePath(video)! : undefined}
+            poster={withBasePath(poster) ?? undefined}
             autoPlay
             muted
             loop
@@ -209,7 +210,7 @@ export default function VideoArtFrame({
         ) : image ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={image}
+            src={withBasePath(image)!}
             alt={alt}
             className="h-full w-full"
             style={mediaStyle}

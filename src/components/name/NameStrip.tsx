@@ -9,6 +9,7 @@ import TornEdge from '@/components/paper/TornEdge'
 import { tearMask } from '@/lib/tear'
 import StickerCutout from '@/components/ui/StickerCutout'
 import { usePrefersReducedMotion } from '@/lib/hooks'
+import { withBasePath } from '@/lib/basePath'
 
 /** One full cycle — the track travels exactly one copy's width. */
 const CYCLE = '22s'
@@ -169,7 +170,7 @@ export default function NameStrip() {
               {assets.nameCutout.src ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  src={assets.nameCutout.src}
+                  src={withBasePath(assets.nameCutout.src)!}
                   alt={`${site.firstName}, cut out`}
                   width={assets.nameCutout.width}
                   height={assets.nameCutout.height}

@@ -13,12 +13,14 @@ type Props = {
  * geometry, never by the image, so the composition is identical empty and
  * filled — dropping a photograph in changes nothing but the pixels.
  */
+import { withBasePath } from '@/lib/basePath'
+
 export default function PolaroidImage({ src, alt, index, objectPosition = '50% 50%' }: Props) {
   return (
     <div className="polaroid-photo">
       {src ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={src} alt={alt} style={{ objectPosition }} loading="lazy" decoding="async" />
+        <img src={withBasePath(src)!} alt={alt} style={{ objectPosition }} loading="lazy" decoding="async" />
       ) : (
         <>
           <div

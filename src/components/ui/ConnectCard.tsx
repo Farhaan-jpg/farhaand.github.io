@@ -135,13 +135,15 @@ function Arrow() {
   )
 }
 
+import { withBasePath } from '@/lib/basePath'
+
 /** Holds the exact circle the real avatar will fill. */
 function Avatar() {
   return (
     <span className="relative block h-[2.6rem] w-[2.6rem] shrink-0 overflow-hidden rounded-full bg-paper-deep ring-1 ring-white/20 sm:h-[3rem] sm:w-[3rem]">
       {assets.avatar ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={assets.avatar} alt="" className="h-full w-full object-cover" />
+        <img src={withBasePath(assets.avatar)!} alt="" className="h-full w-full object-cover" />
       ) : (
         <svg viewBox="0 0 48 48" className="h-full w-full" aria-hidden="true">
           <circle cx="24" cy="19" r="8.5" fill="#121211" opacity="0.22" />

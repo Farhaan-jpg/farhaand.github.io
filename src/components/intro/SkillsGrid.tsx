@@ -20,14 +20,11 @@ import { usePrefersReducedMotion } from '@/lib/hooks'
  * exception, and it is optical rather than dimensional: a bare glyph at the
  * same height as a filled tile reads slightly smaller than it measures.
  */
+import { withBasePath } from '@/lib/basePath'
+
 export default function SkillsGrid() {
   const reduced = usePrefersReducedMotion()
 
-  /**
-   * Variants rather than its own `whileInView`: the logos inherit the
-   * section's reveal through Framer's context, so they settle as part of one
-   * composition instead of firing on their own observer.
-   */
   const tile: Variants = {
     hidden: { opacity: 0, y: 14 },
     show: (i: number) => ({
@@ -47,7 +44,7 @@ export default function SkillsGrid() {
             {skill.src ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={skill.src}
+                src={withBasePath(skill.src)!}
                 alt={skill.label}
                 title={skill.label}
                 className="h-full w-full object-contain"
