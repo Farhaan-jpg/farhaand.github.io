@@ -146,7 +146,7 @@ export default function IntroSection() {
               <h3 className="section-head m-0 mb-[0.75em] text-ink">{site.experience.heading}</h3>
               <ol className="m-0 flex list-none flex-col gap-[1.5em] p-0">
                 {site.experience.items.map((job) => (
-                  <li key={job.period}>
+                  <li key={`${job.period}-${job.role}`}>
                     <p className="body-copy m-0 font-bold leading-snug tracking-[-0.01em] text-ink">
                       {job.period}
                     </p>
