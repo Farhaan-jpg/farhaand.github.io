@@ -1,8 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="28" fill="#ff6633"/>
-  <g transform="translate(24, 20) scale(0.625)">
-    <path fill="#ffffff" d="M64 0L8 28v72l56 28 56-28V28L64 0zm0 18l40 20v52L64 110 24 90V38L64 18z"/>
-    <path fill="#ffffff" d="M48 38h32v12H62l18 18v6H48v-12h18L48 44V38z"/>
-    <path fill="#ffffff" d="M48 80h32v12H48z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="burp-clip">
+      <rect width="512" height="512" rx="112" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#burp-clip)">
+    <!-- Base Left Dark, Right Orange -->
+    <rect x="0" y="0" width="256" height="512" fill="#2e2e2e"/>
+    <rect x="256" y="0" width="256" height="512" fill="#ff6633"/>
+    
+    <!-- Lightning divider profiles -->
+    <path fill="#2e2e2e" d="M256,0 L256,170 L196,195 L256,195 L256,335 L196,335 L256,435 L256,512 L0,512 L0,0 Z"/>
+    <path fill="#ff6633" d="M256,0 L256,170 L196,195 L256,195 L256,335 L196,335 L256,435 L256,512 L512,512 L512,0 Z"/>
+    
+    <!-- Crisp White Interlocking Ribbon -->
+    <polyline points="256,0 256,170 196,195 256,195 256,335 196,335 256,435 256,512" 
+              fill="none" stroke="#ffffff" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter"/>
   </g>
 </svg>

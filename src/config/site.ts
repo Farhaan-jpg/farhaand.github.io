@@ -70,12 +70,12 @@ export const site = {
      * Farhaan's core cybersecurity & development stack.
      */
     items: [
-      { label: 'Kali Linux', short: 'Kl', src: '/assets/skills/kali.png', scale: 1 },
-      { label: 'Burp Suite', short: 'Bs', src: '/assets/skills/burp-suite.png', scale: 1 },
-      { label: 'Wireshark', short: 'Ws', src: '/assets/skills/wireshark.png', scale: 1 },
+      { label: 'Kali Linux', short: 'Kl', src: '/assets/skills/kali.svg', scale: 1 },
+      { label: 'Burp Suite', short: 'Bs', src: '/assets/skills/burp-suite.svg', scale: 1 },
+      { label: 'Wireshark', short: 'Ws', src: '/assets/skills/wireshark.svg', scale: 1 },
       { label: 'Python', short: 'Py', src: '/assets/skills/python.svg', scale: 1 },
       { label: 'Go (Golang)', short: 'Go', src: '/assets/skills/go.svg', scale: 1 },
-      { label: 'MySQL', short: 'My', src: '/assets/skills/mysql.png', scale: 1 },
+      { label: 'MySQL', short: 'My', src: '/assets/skills/mysql.svg', scale: 1 },
     ] as { label: string; short: string; src: string | null; scale: number }[],
   },
 
